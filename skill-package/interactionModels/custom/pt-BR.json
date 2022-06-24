@@ -1,0 +1,69 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "necessidades notion",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "PegaListaDeCompras",
+          "slots": [
+            {
+              "name": "listaDeCompras",
+              "type": "listaDeCompras"
+            }
+          ],
+          "samples": [
+            "leia a {listaDeCompras}",
+            "leia a minha {listaDeCompras}"
+          ]
+        },
+        {
+          "name": "CapturaNomeIntent",
+          "slots": [
+            {
+              "name": "nome",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "Meu nome é {nome}",
+            "olá",
+            "ola mundo",
+            "hello world"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "lista",
+                "synonyms": [
+                  "lista de compras"
+                ]
+              }
+            }
+          ],
+          "name": "listaDeCompras"
+        }
+      ]
+    }
+  },
+  "version": "21"
+}
